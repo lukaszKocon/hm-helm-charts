@@ -1,0 +1,27 @@
+apiVersion: v1
+entries:
+  shipy:
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2023-08-06T20:25:38.6520397+02:00"
+    dependencies:
+    - condition: provision.jaeger
+      name: jaeger
+      repository: https://jaegertracing.github.io/helm-charts
+      version: 0.56.0
+    - condition: provision.rabbitmq
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.1.5
+    - condition: provision.mssql
+      name: mssql-linux
+      repository: https://dnaprawa.github.io/helm-charts
+      version: 1.0.8
+    description: A Helm chart for Kubernetes
+    digest: 5d8df269bdc74445f8ecc8f31c8b90a6f1aee2223954ac3665d84f1675c57f04
+    name: shipy
+    type: application
+    urls:
+    - https://github.com/lukaszKocon/hm-helm-charts/shipy/shipy-2.0.0.tgz
+    version: 2.0.0
+generated: "2023-08-06T20:25:38.6440206+02:00"
